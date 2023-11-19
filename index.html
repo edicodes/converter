@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="card">
+            <header class="header">
+                <h1>Metric/Imperial Unit Conversion</h1>
+                <input type="number" id="input-el" class="num-input">
+                <button id="btn-convert" class="btn-primary">Convert</button>
+            </header>
+            
+            
+            <main class="main">
+                
+                <article class="output" id="length">
+                    <h2>Length (Meter/Feet)</h2>
+                    <p id="length-el">X meters = Y feet | X feet = Y meters
+                    </p>
+                </article>
+                
+                <article class="output" id="volume">
+                    <h2>Volume (Liters/Gallons)</h2>                    
+                        <p id="volume-el">X liters = Y gallons | X gallons = Y liters</p>
+                </article>
+                
+                <article class="output" id="mass">           
+                    <h2>Mass (Kilograms/Pounds)</h2>
+                    <p id="mass-el">X kilos = Y pounds | X pounds = Y kilos</p>
+                </article>
+                
+                
+             </main>   
+        </div>
+              
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+
+:root {
+    --clr-accent: rgba(105, 67, 255, 1);
+    --clr-primary-text: rgba(90, 83, 123, 1);
+    --clr-input-border: rgba(178, 149, 255, 1);
+    --clr-card-bg: rgba(244, 244, 244, 1);
+    --clr-item-bg: rgba(255, 255, 255, 1);
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: rgba(28, 28, 28, 1);
+    color: rgba(53, 53, 53, 1);
+    font-family: 'Inter', system-ui;
+    font-weight: 400; 
+    font-size: .875rem;
+    line-height: 1.5;
+    text-align: center;    
+    display: grid;
+    place-content: center;
+    min-height: 100dvh;
+}
+
+strong, h1 {
+    font-weight: 800; 
+}
+
+h1 {
+    font-size: 1.75rem;
+    line-height: 1.25; 
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1;
+    font-weight: 600;  
+    color: rgba(90, 83, 123, 1);   
+}
+
+.btn-primary {
+    font-weight: 500; 
+    color: rgba(61, 61, 61, 1);
+    background-color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: .5em 1.65em;
+    border-radius: .3125em;
+    border: none;
+    display: block;
+}
+
+.card {
+    background-color: var(--clr-card-bg);
+    width: max(fit-content, 550px);
+}
+
+.header {
+    background-color: var(--clr-accent);
+    color: white; 
+    padding: 2rem 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.num-input {
+    border: 2px solid var(--clr-input-border);
+    border-radius: 0.125rem;
+    background-color: transparent;
+    color: white;
+    font-size: 3.625rem;
+    line-height: .4;
+    width: min(100%, 7.3125rem);
+    text-align: center;
+    font-weight: 800;
+}
+
+.num-input::-webkit-outer-spin-button,
+.num-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.num-input[type=number] {
+  -moz-appearance: textfield;
+}
+.main {
+    padding: 2.25rem 1.55rem;
+}
+.output {
+    background-color: var(--clr-item-bg);
+    padding: 2rem 0; 
+}
+
+.output + .output {
+    margin-block-start: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 0;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
